@@ -1,9 +1,10 @@
 from flask import Flask
+from configs import config_all
 
 def create_app():
     app = Flask(__name__)
 
-    # colocar aqui as configs    
+    config_all(app)   
 
     return app
 
